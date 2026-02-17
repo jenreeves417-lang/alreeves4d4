@@ -1,83 +1,250 @@
-11:13:52 PM: build-image version: fbc53cb3bf0a666da624bbd8817fbc7307dd7700 (noble-new-builds)
-11:13:52 PM: buildbot version: 7bbcb2917d4d3a315029a5def09c850276396d6e
-11:13:52 PM: Fetching cached dependencies
-11:13:52 PM: Failed to fetch cache, continuing with build
-11:13:52 PM: Starting to prepare the repo for build
-11:13:52 PM: No cached dependencies found. Cloning fresh repo
-11:13:52 PM: git clone --filter=blob:none https://github.com/jenreeves417-lang/Index.html
-11:13:52 PM: Preparing Git Reference refs/heads/main
-11:13:53 PM: Starting to install dependencies
-11:13:53 PM: mise ~/.config/mise/config.toml tools: python@3.14.3
-11:13:53 PM: mise ~/.config/mise/config.toml tools: ruby@3.4.8
-11:13:53 PM: mise ~/.config/mise/config.toml tools: go@1.26.0
-11:13:54 PM: v22.22.0 is already installed.
-11:13:54 PM: Now using node v22.22.0 (npm v10.9.4)
-11:13:54 PM: Enabling Node.js Corepack
-11:13:54 PM: Successfully installed dependencies
-11:13:55 PM: Detected 0 framework(s)
-11:13:55 PM: Starting build script
-11:13:55 PM: Section completed: initializing
-11:13:57 PM: ​
-11:13:57 PM: Netlify Build                                                 
-11:13:57 PM: ────────────────────────────────────────────────────────────────
-11:13:57 PM: ​
-11:13:57 PM: ❯ Version
-11:13:57 PM:   @netlify/build 35.7.1
-11:13:57 PM: ​
-11:13:57 PM: ❯ Flags
-11:13:57 PM:   accountId: 69893197c288e6b4e2b51ef6
-11:13:57 PM:   baseRelDir: true
-11:13:57 PM:   buildId: 6992997f3ea9ca407e90a6ff
-11:13:57 PM:   deployId: 6992997f3ea9ca407e90a701
-11:13:57 PM: ​
-11:13:57 PM: ❯ Current directory
-11:13:57 PM:   /opt/build/repo
-11:13:57 PM: ​
-11:13:57 PM: ❯ Config file
-11:13:57 PM:   No config file was defined: using default values.
-11:13:57 PM: ​
-11:13:57 PM: ❯ Context
-11:13:57 PM:   production
-11:13:57 PM: ​
-11:13:57 PM: ❯ Installing extensions
-11:13:57 PM:    - baseline
-11:14:36 PM: ​
-11:14:36 PM: ❯ Loading extensions
-11:14:36 PM:    - baseline
-11:14:40 PM: Post processing - redirect rules
-11:14:40 PM: Starting post processing
-11:14:40 PM: Skipping form detection
-11:14:40 PM: Post processing - header rules
-11:14:40 PM: Post processing done
-11:14:40 PM: Section completed: postprocessing
-11:14:40 PM: ​
-11:14:40 PM: Scanning for secrets in code and build output.                
-11:14:40 PM: ────────────────────────────────────────────────────────────────
-11:14:40 PM: ​
-11:14:40 PM: Secrets scanning complete. 45142 file(s) scanned. No secrets detected in build output or repo code!
-11:14:40 PM: ​
-11:14:40 PM: (Secrets scanning completed in 3.4s)
-11:14:40 PM: ​
-11:14:40 PM: Deploy site                                                   
-11:14:40 PM: ────────────────────────────────────────────────────────────────
-11:14:40 PM: ​
-11:14:40 PM: Starting to deploy site from '/'
-11:14:40 PM: Calculating files to upload
-11:14:40 PM: 0 new file(s) to upload
-11:14:40 PM: 0 new function(s) to upload
-11:14:40 PM: Section completed: deploying
-11:14:40 PM: Site deploy was successfully initiated
-11:14:40 PM: ​
-11:14:40 PM: (Deploy site completed in 529ms)
-11:14:41 PM: Site is live ✨
-11:14:41 PM: ​
-11:14:41 PM: Netlify Build Complete                                        
-11:14:41 PM: ────────────────────────────────────────────────────────────────
-11:14:41 PM: ​
-11:14:41 PM: (Netlify Build completed in 43.8s)
-11:14:41 PM: Caching artifacts
-11:14:41 PM: Build script success
-11:14:41 PM: Section completed: building
-11:14:42 PM: Uploading Cache of size 67.0MB
-11:14:42 PM: Section completed: cleanup
-11:14:43 PM: Finished processing build request in 50.701s
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Al Reeves for Columbia County Commission District 4</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Patriot+Script&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .patriotic { background: linear-gradient(to bottom, #ffffff, #f0f4ff); }
+    h1, h2 { font-family: 'Patriot Script', cursive; }
+
+    /* American flag background */
+    .flag-bg {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .flag-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-linear-gradient(
+          to bottom,
+          #B22234 0px, #B22234 calc(100% / 13),
+          #FFFFFF calc(100% / 13), #FFFFFF calc(200% / 13),
+          #B22234 calc(200% / 13), #B22234 calc(300% / 13),
+          #FFFFFF calc(300% / 13), #FFFFFF calc(400% / 13),
+          #B22234 calc(400% / 13), #B22234 calc(500% / 13),
+          #FFFFFF calc(500% / 13), #FFFFFF calc(600% / 13),
+          #B22234 calc(600% / 13), #B22234 calc(700% / 13),
+          #FFFFFF calc(700% / 13), #FFFFFF calc(800% / 13),
+          #B22234 calc(800% / 13), #B22234 calc(900% / 13),
+          #FFFFFF calc(900% / 13), #FFFFFF calc(1000% / 13),
+          #B22234 calc(1000% / 13), #B22234 calc(1100% / 13),
+          #FFFFFF calc(1100% / 13), #FFFFFF calc(1200% / 13),
+          #B22234 calc(1200% / 13), #B22234 100%
+        );
+      opacity: 0.08;
+    }
+    .flag-bg::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40%;
+      height: calc(700% / 13);
+      background: #3C3B6E;
+      opacity: 0.08;
+    }
+    .flag-stars {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40%;
+      height: calc(700% / 13);
+      opacity: 0.10;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 patriotic">
+
+  <!-- American Flag Background -->
+  <div class="flag-bg">
+    <svg class="flag-stars" viewBox="0 0 494 350" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="494" height="350" fill="#3C3B6E"/>
+      <!-- Row 1: 6 stars -->
+      <g fill="white">
+        <polygon points="44,20 48,32 60,32 50,40 54,52 44,44 34,52 38,40 28,32 40,32"/>
+        <polygon points="126,20 130,32 142,32 132,40 136,52 126,44 116,52 120,40 110,32 122,32"/>
+        <polygon points="208,20 212,32 224,32 214,40 218,52 208,44 198,52 202,40 192,32 204,32"/>
+        <polygon points="290,20 294,32 306,32 296,40 300,52 290,44 280,52 284,40 274,32 286,32"/>
+        <polygon points="372,20 376,32 388,32 378,40 382,52 372,44 362,52 366,40 356,32 368,32"/>
+        <polygon points="454,20 458,32 470,32 460,40 464,52 454,44 444,52 448,40 438,32 450,32"/>
+      </g>
+      <!-- Row 2: 5 stars -->
+      <g fill="white">
+        <polygon points="85,56 89,68 101,68 91,76 95,88 85,80 75,88 79,76 69,68 81,68"/>
+        <polygon points="167,56 171,68 183,68 173,76 177,88 167,80 157,88 161,76 151,68 163,68"/>
+        <polygon points="249,56 253,68 265,68 255,76 259,88 249,80 239,88 243,76 233,68 245,68"/>
+        <polygon points="331,56 335,68 347,68 337,76 341,88 331,80 321,88 325,76 315,68 327,68"/>
+        <polygon points="413,56 417,68 429,68 419,76 423,88 413,80 403,88 407,76 397,68 409,68"/>
+      </g>
+      <!-- Row 3: 6 stars -->
+      <g fill="white">
+        <polygon points="44,92 48,104 60,104 50,112 54,124 44,116 34,124 38,112 28,104 40,104"/>
+        <polygon points="126,92 130,104 142,104 132,112 136,124 126,116 116,124 120,112 110,104 122,104"/>
+        <polygon points="208,92 212,104 224,104 214,112 218,124 208,116 198,124 202,112 192,104 204,104"/>
+        <polygon points="290,92 294,104 306,104 296,112 300,124 290,116 280,124 284,112 274,104 286,104"/>
+        <polygon points="372,92 376,104 388,104 378,112 382,124 372,116 362,124 366,112 356,104 368,104"/>
+        <polygon points="454,92 458,104 470,104 460,112 464,124 454,116 444,124 448,112 438,104 450,104"/>
+      </g>
+      <!-- Row 4: 5 stars -->
+      <g fill="white">
+        <polygon points="85,128 89,140 101,140 91,148 95,160 85,152 75,160 79,148 69,140 81,140"/>
+        <polygon points="167,128 171,140 183,140 173,148 177,160 167,152 157,160 161,148 151,140 163,140"/>
+        <polygon points="249,128 253,140 265,140 255,148 259,160 249,152 239,160 243,148 233,140 245,140"/>
+        <polygon points="331,128 335,140 347,140 337,148 341,160 331,152 321,160 325,148 315,140 327,140"/>
+        <polygon points="413,128 417,140 429,140 419,148 423,160 413,152 403,160 407,148 397,140 409,140"/>
+      </g>
+      <!-- Row 5: 6 stars -->
+      <g fill="white">
+        <polygon points="44,164 48,176 60,176 50,184 54,196 44,188 34,196 38,184 28,176 40,176"/>
+        <polygon points="126,164 130,176 142,176 132,184 136,196 126,188 116,196 120,184 110,176 122,176"/>
+        <polygon points="208,164 212,176 224,176 214,184 218,196 208,188 198,196 202,184 192,176 204,176"/>
+        <polygon points="290,164 294,176 306,176 296,184 300,196 290,188 280,196 284,184 274,176 286,176"/>
+        <polygon points="372,164 376,176 388,176 378,184 382,196 372,188 362,196 366,184 356,176 368,176"/>
+        <polygon points="454,164 458,176 470,176 460,184 464,196 454,188 444,196 448,184 438,176 450,176"/>
+      </g>
+      <!-- Row 6: 5 stars -->
+      <g fill="white">
+        <polygon points="85,200 89,212 101,212 91,220 95,232 85,224 75,232 79,220 69,212 81,212"/>
+        <polygon points="167,200 171,212 183,212 173,220 177,232 167,224 157,232 161,220 151,212 163,212"/>
+        <polygon points="249,200 253,212 265,212 255,220 259,232 249,224 239,232 243,220 233,212 245,212"/>
+        <polygon points="331,200 335,212 347,212 337,220 341,232 331,224 321,232 325,220 315,212 327,212"/>
+        <polygon points="413,200 417,212 429,212 419,220 423,232 413,224 403,232 407,220 397,212 409,212"/>
+      </g>
+      <!-- Row 7: 6 stars -->
+      <g fill="white">
+        <polygon points="44,236 48,248 60,248 50,256 54,268 44,260 34,268 38,256 28,248 40,248"/>
+        <polygon points="126,236 130,248 142,248 132,256 136,268 126,260 116,268 120,256 110,248 122,248"/>
+        <polygon points="208,236 212,248 224,248 214,256 218,268 208,260 198,268 202,256 192,248 204,248"/>
+        <polygon points="290,236 294,248 306,248 296,256 300,268 290,260 280,268 284,256 274,248 286,248"/>
+        <polygon points="372,236 376,248 388,248 378,256 382,268 372,260 362,268 366,256 356,248 368,248"/>
+        <polygon points="454,236 458,248 470,248 460,256 464,268 454,260 444,268 448,256 438,248 450,248"/>
+      </g>
+      <!-- Row 8: 5 stars -->
+      <g fill="white">
+        <polygon points="85,272 89,284 101,284 91,292 95,304 85,296 75,304 79,292 69,284 81,284"/>
+        <polygon points="167,272 171,284 183,284 173,292 177,304 167,296 157,304 161,292 151,284 163,284"/>
+        <polygon points="249,272 253,284 265,284 255,292 259,304 249,296 239,304 243,292 233,284 245,284"/>
+        <polygon points="331,272 335,284 347,284 337,292 341,304 331,296 321,304 325,292 315,284 327,284"/>
+        <polygon points="413,272 417,284 429,284 419,292 423,304 413,296 403,304 407,292 397,284 409,284"/>
+      </g>
+      <!-- Row 9: 6 stars -->
+      <g fill="white">
+        <polygon points="44,308 48,320 60,320 50,328 54,340 44,332 34,340 38,328 28,320 40,320"/>
+        <polygon points="126,308 130,320 142,320 132,328 136,340 126,332 116,340 120,328 110,320 122,320"/>
+        <polygon points="208,308 212,320 224,320 214,328 218,340 208,332 198,340 202,328 192,320 204,320"/>
+        <polygon points="290,308 294,320 306,320 296,328 300,340 290,332 280,340 284,328 274,320 286,320"/>
+        <polygon points="372,308 376,320 388,320 378,328 382,340 372,332 362,340 366,328 356,320 368,320"/>
+        <polygon points="454,308 458,320 470,320 460,328 464,340 454,332 444,340 448,328 438,320 450,320"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-red-50 via-white to-blue-50 overflow-hidden">
+    <div class="absolute inset-0 opacity-10 pointer-events-none">
+      <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
+    </div>
+    <div class="relative max-w-5xl mx-auto px-6 text-center">
+      <img src="al-sign.jpg" alt="Al Reeves Campaign Sign" class="max-w-xs md:max-w-md mx-auto rounded-xl border-4 border-white shadow-2xl mb-8 object-contain">
+      <h1 class="text-6xl md:text-8xl font-bold text-red-700 tracking-tight mb-4">
+        Al Reeves
+      </h1>
+      <p class="text-3xl md:text-5xl text-blue-800 font-semibold mb-6">
+        For Columbia County Commission – District 4
+      </p>
+      <p class="text-2xl md:text-4xl text-gray-700 mb-10 max-w-3xl mx-auto">
+        Your Voice...Your County
+      </p>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="#about" class="px-10 py-5 bg-red-600 text-white rounded-full font-bold text-xl hover:bg-red-700 transition shadow-lg">
+          Learn More
+        </a>
+        <a href="mailto:alreeves1@gmail.com?subject=Support%20Your%20Campaign" class="px-10 py-5 bg-blue-600 text-white rounded-full font-bold text-xl hover:bg-blue-700 transition shadow-lg">
+          Get Involved
+        </a>
+        <a href="mailto:alreeves1@gmail.com" class="px-10 py-5 bg-white text-red-600 border-2 border-red-600 rounded-full font-bold text-xl hover:bg-red-50 transition shadow-lg inline-flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Email Al
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-5xl md:text-7xl text-center text-red-700 font-bold mb-12">Meet Al</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-xl leading-relaxed mb-6">
+            Al Reeves is a dedicated [his profession/ background, e.g. businessman, veteran, community leader] and lifelong resident of Columbia County / Augusta area. As your neighbor and family man, he believes in putting people first – not politics.
+          </p>
+          <p class="text-xl leading-relaxed mb-6">
+            Married to Jennifer Reeves, proud father/husband, he knows the challenges families face: responsible growth, protecting our rural character, lowering taxes where possible, supporting schools, and keeping Columbia County safe and prosperous for everyone.
+          </p>
+          <p class="text-xl leading-relaxed">
+            Running because: "Government should serve the people – not special interests. It's time for common-sense leadership that's accountable, transparent, and truly by the people, for the people."
+          </p>
+        </div>
+        <div class="text-center">
+          <!-- Optional second photo or family pic -->
+          <img src="al-reeves.jpeg" alt="Al Reeves - Family / Community" class="rounded-xl shadow-2xl mx-auto max-w-md">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform / Values -->
+  <section class="py-20 bg-gradient-to-r from-blue-50 to-red-50">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-5xl md:text-7xl text-red-700 font-bold mb-12">American Values for Columbia County</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <h3 class="text-3xl font-bold text-blue-800 mb-4">For the People</h3>
+          <p class="text-lg">Fighting for fair taxes, smart growth that preserves our way of life, and putting residents over developers.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <h3 class="text-3xl font-bold text-red-700 mb-4">By the People</h3>
+          <p class="text-lg">Transparent decisions, listening to District 4 voices in Grovetown, Harlem, Appling, and beyond – no backroom deals.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <h3 class="text-3xl font-bold text-blue-800 mb-4">Faith, Family & Strong Communities</h3>
+          <p class="text-lg">Freedom, family, faith, fiscal responsibility, and strong communities – rooted in the values that make America great.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action / Contact -->
+  <section class="py-20 bg-red-600 text-white text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-8">Join the Movement</h2>
+      <p class="text-2xl mb-10">Together, we can keep Columbia County strong, prosperous, and true to American ideals.</p>
+      <div class="flex flex-wrap justify-center gap-6 mb-12">
+        <a href="mailto:alreeves1@gmail.com" class="px-10 py-5 bg-white text-red-600 rounded-full font-bold text-xl hover:bg-gray-100 transition inline-flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>Email Campaign</a>
+        <a href="[twitter or facebook link]" class="px-10 py-5 bg-white text-red-600 rounded-full font-bold text-xl hover:bg-gray-100 transition">Follow on Social</a>
+      </div>
+      <p class="text-xl">Paid for by the candidate, Al Reeves.</p>
+      <p class="text-lg mt-2">No monetary donations accepted.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-blue-900 text-white text-center">
+    <p class="text-lg">&copy; 2026 Al Reeves for Columbia County Commission District 4</p>
+    <p class="mt-2">Augusta, Georgia &bull; For the People, By the People</p>
+  </footer>
+
+</body>
+</html>
